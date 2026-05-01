@@ -26,11 +26,17 @@ For the wider architectural context, see the [Blueprint](./BLUEPRINT.md).
 
 Node IDs are positional and hierarchical, encoding the path from the Hub:
 
-```
-HUB → N1 → N1.1 → N1.1.1
-                 ↘ N1.1.2
-      → N2 → N2.1 → N2.1.1
-                   ↘ N2.1.2 → N2.1.2.1
+```mermaid
+graph TD
+    HUB[Hub] --> N1[N1]
+    N1 --> N11[N1.1]
+    N11 --> N111[N1.1.1]
+    N11 --> N112[N1.1.2]
+    HUB --> N2[N2]
+    N2 --> N21[N2.1]
+    N21 --> N211[N2.1.1]
+    N21 --> N212[N2.1.2]
+    N212 --> N2121[N2.1.2.1]
 ```
 
 - The ID reflects the topological position in the network graph, not the role of the node.
