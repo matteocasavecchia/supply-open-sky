@@ -4,6 +4,7 @@
 # public project documentation.
 BRIEF_PHASE_*.md
 ROADMAP_INTERNAL.md
+archive/
 
 # ─── OS metadata ──────────────────────────────────────────────────
 .DS_Store
