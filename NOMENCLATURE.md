@@ -26,18 +26,10 @@ For the wider architectural context, see the [Blueprint](./BLUEPRINT.md).
 
 Node IDs are positional and hierarchical, encoding the path from the Hub:
 
-```mermaid
-graph TD
-    HUB[Hub] --> N1[N1]
-    N1 --> N11[N1.1]
-    N11 --> N111[N1.1.1]
-    N11 --> N112[N1.1.2]
-    HUB --> N2[N2]
-    N2 --> N21[N2.1]
-    N21 --> N211[N2.1.1]
-    N21 --> N212[N2.1.2]
-    N212 --> N2121[N2.1.2.1]
-```
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/topology-dark.svg">
+  <img alt="Network topology: a central Hub branches into Nodes N1 and N2. N1 has children N1.1 and N1.2; N1.2 has further children N1.2.1 and N1.2.2. N2 has children N2.1 and N2.2. Drones transit along segments labeled drones and LoRa. Field transmitters are deployed in villages surrounding selected Nodes." src="assets/topology-light.svg">
+</picture>
 
 - The ID reflects the topological position in the network graph, not the role of the node.
 - Whether a node is a transit stop or a final delivery point is determined by the Mission Plan, not by the node itself.

@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security vulnerability
+    url: https://github.com/matteocasavecchia/supply-open-sky/security
+    about: Please do not open a public issue for security-relevant reports. Use GitHub's private vulnerability reporting or see SECURITY.md for the email address.
+  - name: Code of Conduct violation
+    url: https://github.com/matteocasavecchia/supply-open-sky/blob/main/CODE_OF_CONDUCT.md
+    about: To report a Code of Conduct violation, please follow the process described in CODE_OF_CONDUCT.md. Do not open a public issue.
+  - name: Project discussion (LinkedIn)
+    url: https://www.linkedin.com/in/casavecchia/
+    about: For general project conversations that are not bug reports, feature requests, or questions, you can also reach out via LinkedIn.
