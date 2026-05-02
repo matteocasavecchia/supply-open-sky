@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 500 400" role="img" aria-labelledby="drone-internal-title drone-internal-desc">
+  <title id="drone-internal-title">Drone internal architecture</title>
+  <desc id="drone-internal-desc">Two-tier architecture inside the drone. The Companion Computer (Raspberry Pi Zero 2W running sos-drone in Python) hosts the Reticulum network stack, the SOS mission logic, the reception and application of hop-by-hop updates, and acts as an active mesh relay during flight. The Flight Controller (ArduPilot or PX4, third-party) handles motor control and stabilization, GPS navigation and waypoints, and IMU sensors. The two are connected over MAVLink UART, which is bidirectional.</desc>
+
+  <style>
+    .label-th { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; font-size: 14px; font-weight: 500; }
+    .label-ts { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; font-size: 12px; font-weight: 400; }
+    .label-tn { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; font-size: 10px; font-weight: 400; font-style: italic; }
+    .label-li { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; font-size: 12px; font-weight: 400; }
+  </style>
+
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#9C9A92"/>
+    </marker>
+  </defs>
+
+  <!-- Companion Computer box (custom: purple) -->
+  <g>
+    <rect x="50" y="40" width="400" height="145" rx="8" fill="#3C3489" stroke="#AFA9EC" stroke-width="0.5"/>
+    <text class="label-th" x="250" y="65" text-anchor="middle" dominant-baseline="central" fill="#EEEDFE">Companion Computer</text>
+    <text class="label-tn" x="250" y="87" text-anchor="middle" dominant-baseline="central" fill="#EEEDFE">Raspberry Pi Zero 2W — Python (sos-drone)</text>
+    <text class="label-li" x="80" y="120" dominant-baseline="central" fill="#EEEDFE">• Reticulum network stack</text>
+    <text class="label-li" x="80" y="138" dominant-baseline="central" fill="#EEEDFE">• SOS mission logic</text>
+    <text class="label-li" x="80" y="156" dominant-baseline="central" fill="#EEEDFE">• Update reception and application</text>
+    <text class="label-li" x="80" y="174" dominant-baseline="central" fill="#EEEDFE">• Active mesh relay during flight</text>
+  </g>
+
+  <!-- Connector: Companion ↔ Flight Controller (MAVLink UART, bidirectional) -->
+  <line x1="250" y1="185" x2="250" y2="235" stroke="#9C9A92" stroke-width="1" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <text class="label-tn" x="260" y="210" dominant-baseline="central" fill="#9C9A92">MAVLink (UART)</text>
+
+  <!-- Flight Controller box (third-party: green) -->
+  <g>
+    <rect x="50" y="235" width="400" height="125" rx="8" fill="#085041" stroke="#5DCAA5" stroke-width="0.5"/>
+    <text class="label-th" x="250" y="260" text-anchor="middle" dominant-baseline="central" fill="#E1F5EE">Flight Controller</text>
+    <text class="label-tn" x="250" y="282" text-anchor="middle" dominant-baseline="central" fill="#E1F5EE">ArduPilot / PX4 — C/C++</text>
+    <text class="label-li" x="80" y="315" dominant-baseline="central" fill="#E1F5EE">• Motor control and stabilization</text>
+    <text class="label-li" x="80" y="333" dominant-baseline="central" fill="#E1F5EE">• GPS navigation and waypoints</text>
+    <text class="label-li" x="80" y="351" dominant-baseline="central" fill="#E1F5EE">• IMU sensors</text>
+  </g>
+</svg>
