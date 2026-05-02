@@ -1,6 +1,6 @@
 # Supply Open Sky
 
-*Autonomous infrastructure for underserved communities — drone delivery and mesh communication on solar-powered nodes.*
+*Autonomous infrastructure for underserved communities: drone delivery and mesh communication on solar-powered nodes.*
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](./LICENSE.md)
 
@@ -11,7 +11,7 @@
 Supply Open Sky is an integrated autonomous drone delivery system designed to
 bring potable water, medicines, mail, and essential goods to communities that
 lack reliable access to basic services. It is built for geographically
-isolated regions where conventional logistics are ineffective or impossible —
+isolated regions where conventional logistics are ineffective or impossible;
 areas without dependable road infrastructure or established distribution
 networks.
 
@@ -25,7 +25,7 @@ Drones depart loaded with payload, deliver along scheduled routes or to
 on-demand GPS coordinates, and return to be reloaded. Each Node is
 solar-powered, fully autonomous, and serves a dual purpose: it is relay
 infrastructure for drone operations, and at the same time a permanent service
-point for the surrounding community — providing public water access and an
+point for the surrounding community; providing public water access and an
 emergency communication link via a LoRa Mesh backbone.
 
 Supply Open Sky is not just a delivery system. It is logistical infrastructure
@@ -34,15 +34,15 @@ designed to exist where no other infrastructure does.
 ## What this repository contains
 
 This repository hosts the public architectural documentation of the Supply
-Open Sky project. The implementation code — drone firmware, scheduling
-engine, hub software, communication stack, simulator, dashboard — is
+Open Sky project. The implementation code - drone firmware, scheduling
+engine, hub software, communication stack, simulator, dashboard - is
 maintained in a private repository during the current development phase and
 is not published here.
 
-- **[BLUEPRINT.md](./BLUEPRINT.md)** — full architectural specification of
+- **[BLUEPRINT.md](./BLUEPRINT.md)** full architectural specification of
   the system: operational concept, network topology, mission types, control
   architecture, communication stack, and design considerations.
-- **[NOMENCLATURE.md](./NOMENCLATURE.md)** — reference for the technical
+- **[NOMENCLATURE.md](./NOMENCLATURE.md)** reference for the technical
   terminology used across the project documentation and source code.
 
 ## System architecture at a glance
@@ -60,11 +60,11 @@ graph TD
 ```
 
 The Operations layer plans missions, schedules flights, and coordinates the
-network — without human intervention along the network during routine
+network; without human intervention along the network during routine
 operations. The Network layer is the physical backbone of the system: relay
 nodes that host battery swaps, water tanks, and the LoRa mesh radio
 infrastructure, designed to keep operating when external communication is
-degraded or absent. The Edge layer is where the system meets the world —
+degraded or absent. The Edge layer is where the system meets the world,
 drones flying missions on pre-loaded plans that complete even if the radio
 link is lost, and field transmitters distributed to villages within range of
 each Node.
@@ -87,7 +87,7 @@ validation of the scheduling logic on extended test scenarios.
 
 ## Following the project
 
-- **LinkedIn** — [Matteo Casavecchia](https://www.linkedin.com/in/casavecchia/)
+- **LinkedIn** [Matteo Casavecchia](https://www.linkedin.com/in/casavecchia/)
 - **Watch this repository** for documentation updates and future releases.
 
 ## Contributing
