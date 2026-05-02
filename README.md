@@ -85,6 +85,29 @@ validation of the scheduling logic on extended test scenarios.
 
 *This section is updated periodically as the project advances.*
 
+## Project signs of life
+
+To make project activity verifiable rather than rhetorical, this repository
+publishes two automatically generated files that summarise development
+metrics from the private working repository:
+
+- **[STATUS.md](./STATUS.md)** human-readable summary: commit cadence over
+  the last 30 days, issue throughput, branch activity, and continuous
+  integration status.
+- **[STATUS.json](./STATUS.json)** the same data in a machine-readable form
+  (schema version 1.0), suitable for dashboards or scripted checks.
+
+Both files are regenerated daily by an automated workflow that runs against
+the private repository, then committed here by a dedicated GitHub App
+(`supply-open-sky-mirror-bot[bot]`). On days with no underlying activity,
+no commit is produced; an unchanged file therefore reflects an unchanged
+project, not a stale pipeline.
+
+The metrics deliberately exclude any figure that would require independent
+verification (deployment counts, test totals beyond what CI exposes, field
+operation statistics). Only data that GitHub can attest to directly is
+reported.
+
 ## Following the project
 
 - **LinkedIn** [Matteo Casavecchia](https://www.linkedin.com/in/casavecchia/)
