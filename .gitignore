@@ -1,0 +1,24 @@
+# ─── Internal working files (never committed) ─────────────────────
+# These files live only on the local working copy. They are used
+# during planning/execution sessions and are not part of the
+# public project documentation.
+BRIEF_PHASE_*.md
+ROADMAP_INTERNAL.md
+
+# ─── OS metadata ──────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ─── Editor / IDE ─────────────────────────────────────────────────
+.vscode/
+.idea/
+*.code-workspace
+*.swp
+*.swo
+*~
+
+# ─── Office temporary files ───────────────────────────────────────
+~$*.docx
+~$*.xlsx
+~$*.pptx
