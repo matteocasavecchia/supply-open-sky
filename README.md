@@ -3,6 +3,8 @@
 *Autonomous infrastructure for underserved communities: drone delivery and mesh communication on solar-powered nodes.*
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](./LICENSE.md)
+[![Commits last 30 days](https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/matteocasavecchia/supply-open-sky/main/STATUS.json&query=$.activity.commits_last_30d&label=commits%2030d&color=blue)](./STATUS.md)
+[![Last commit](https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/matteocasavecchia/supply-open-sky/main/STATUS.json&query=$.activity.last_commit_date&label=last%20commit&color=blue)](./STATUS.md)
 
 ---
 
