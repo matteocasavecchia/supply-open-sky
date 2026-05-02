@@ -9,7 +9,7 @@ words with the same meaning as everyone else on the project.
 
 For the wider architectural context, see the [Blueprint](./BLUEPRINT.md).
 
-*Version 1.0 — March 2026*
+*Version 1.1 — May 2026*
 
 ---
 
@@ -21,6 +21,7 @@ For the wider architectural context, see the [Blueprint](./BLUEPRINT.md).
 | Network relay and service node | **Node** | `N1`, `N1.1`, `N1.2.1` |
 | Connection between two nodes | **Segment** | — |
 | Single landing slot on a node | **Landing Pad** | `PAD-1`, `PAD-2` |
+| Ground emergency landing area adjacent to a Node | **Emergency Landing Zone** | `ELZ` |
 
 ### Node Identifier Format
 
@@ -69,6 +70,18 @@ Describes the operational logic and routing of the flight.
 | Pre-launch sensor query and plan calculation phase | **Pre-flight** |
 | Drone operating on stored plan without live updates | **Fallback Mode** |
 
+### Hop-by-hop Execution
+
+The drone is not given the full route at takeoff. The Hub transmits one
+flight instruction at a time, when the drone is at the current Node and
+about to depart for the next.
+
+| Concept | Term |
+|---|---|
+| Single-segment instruction transmitted from the Hub to the drone via the current Node, including next destination, water quota, and cargo handling | **Hop Instruction** |
+| Architectural pattern in which the drone receives one Hop Instruction at each intermediate Node | **Hop-by-hop execution** |
+| Drone operating outside the SCHEDULED plan, typically an ON-DEMAND drone in transit back to the Hub through intermediate Nodes | **Off-cycle Drone** |
+
 ---
 
 ## Communication
@@ -77,7 +90,23 @@ Describes the operational logic and routing of the flight.
 |---|---|
 | Backbone mesh between nodes | **LoRa Mesh** |
 | Portable device distributed to villages | **Field Transmitter** |
-| RF link between Hub/nodes and drone in flight | **RF Control Link** |
+| RF link between Hub/nodes and drone in flight (deprecated) | **~~RF Control Link~~** |
+
+> **Note on `RF Control Link`.** The original architecture used a separate
+> RF channel between Nodes and drones in flight. The current architecture
+> uses a single LoRa 868 MHz radio with a Reticulum stack for both the
+> backbone mesh and the drone↔Node link. The term is retained here for
+> reference to legacy specification sections that have been superseded.
+
+---
+
+## Power & Batteries
+
+| Concept | Term |
+|---|---|
+| Main propulsion battery of the drone, swapped at every Node via the automated swap cycle | **Flight Battery** |
+| Auxiliary battery powering non-propulsion systems (firmware, LoRa module, telemetry) during flight and during Flight Battery swap, ensuring continuous mesh participation | **Supplementary Battery** |
+| Position in the Node battery rack where spare Flight Batteries are charged and stored | **Rack Slot** |
 
 ---
 
