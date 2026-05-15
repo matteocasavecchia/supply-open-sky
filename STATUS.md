@@ -1,6 +1,6 @@
 # Project status
 
-*Last updated: 2026-05-14 04:20 UTC. Generated automatically from the
+*Last updated: 2026-05-15 04:23 UTC. Generated automatically from the
 private development repository. See [STATUS.json](./STATUS.json) for the
 machine-readable version.*
 
@@ -9,19 +9,19 @@ machine-readable version.*
 | Metric | Value |
 |---|---|
 | Commits | 155 |
-| Issues closed | 3 |
+| Issues closed | 4 |
 | Active branches | 3 |
-| Last commit | 2026-05-10 |
-| Oldest open issue (age) | 12 days |
+| Last commit | 2026-05-14 |
+| Oldest open issue (age) | 13 days |
 
 ## Continuous integration
 
 | Metric | Value |
 |---|---|
-| Status | ❌ failing |
-| Last successful run | 2026-05-10 |
-| Test suites | 9 (some failing) |
+| Status | ✅ passing |
+| Last successful run | 2026-05-14 |
+| Test suites | 9 (all passing) |
 
 ---
 
-*This file is regenerated daily. Source commit: `17c218c`.*
+*This file is regenerated daily. Source commit: `e9e0dae`.*

@@ -2,17 +2,17 @@
   "activity": {
     "branches_active_last_30d": 3,
     "commits_last_30d": 155,
-    "issues_closed_last_30d": 3,
-    "last_commit_date": "2026-05-10",
-    "oldest_open_issue_age_days": 12
+    "issues_closed_last_30d": 4,
+    "last_commit_date": "2026-05-14",
+    "oldest_open_issue_age_days": 13
   },
   "ci": {
-    "last_run_date": "2026-05-10",
-    "status": "failing",
+    "last_run_date": "2026-05-14",
+    "status": "passing",
     "test_suites": 9,
-    "test_suites_passing": false
+    "test_suites_passing": true
   },
-  "generated_at": "2026-05-14T04:20:09Z",
+  "generated_at": "2026-05-15T04:23:15Z",
   "schema_version": "1.0",
-  "source_commit": "17c218c"
+  "source_commit": "e9e0dae"
 }
