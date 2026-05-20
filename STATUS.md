@@ -1,6 +1,6 @@
 # Project status
 
-*Last updated: 2026-05-19 04:26 UTC. Generated automatically from the
+*Last updated: 2026-05-20 04:27 UTC. Generated automatically from the
 private development repository. See [STATUS.json](./STATUS.json) for the
 machine-readable version.*
 
@@ -8,11 +8,11 @@ machine-readable version.*
 
 | Metric | Value |
 |---|---|
-| Commits | 104 |
+| Commits | 101 |
 | Issues closed | 8 |
 | Active branches | 2 |
 | Last commit | 2026-05-16 |
-| Oldest open issue (age) | 17 days |
+| Oldest open issue (age) | 18 days |
 
 ## Continuous integration
 
