@@ -1,10 +1,10 @@
 {
   "activity": {
     "branches_active_last_30d": 2,
-    "commits_last_30d": 99,
+    "commits_last_30d": 94,
     "issues_closed_last_30d": 8,
     "last_commit_date": "2026-05-16",
-    "oldest_open_issue_age_days": 19
+    "oldest_open_issue_age_days": 20
   },
   "ci": {
     "last_run_date": "2026-05-16",
@@ -12,7 +12,7 @@
     "test_suites": 9,
     "test_suites_passing": true
   },
-  "generated_at": "2026-05-21T04:30:48Z",
+  "generated_at": "2026-05-22T04:27:44Z",
   "schema_version": "1.0",
   "source_commit": "18de765"
 }
