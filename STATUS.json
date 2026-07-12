@@ -4,7 +4,7 @@
     "commits_last_30d": 0,
     "issues_closed_last_30d": 0,
     "last_commit_date": "2026-05-16",
-    "oldest_open_issue_age_days": 70
+    "oldest_open_issue_age_days": 71
   },
   "ci": {
     "last_run_date": "2026-05-16",
@@ -12,7 +12,7 @@
     "test_suites": 9,
     "test_suites_passing": true
   },
-  "generated_at": "2026-07-11T05:35:12Z",
+  "generated_at": "2026-07-12T05:51:17Z",
   "schema_version": "1.0",
   "source_commit": "18de765"
 }
